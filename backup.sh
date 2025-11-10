@@ -24,6 +24,13 @@ mkdir -p "$REPO_ROOT/tmux"
 cp -f ~/.tmux.conf "$REPO_ROOT/tmux/tmux.conf"
 echo "Backed up tmux.conf"
 
+# --- gitmux ---
+# Ensure the target directory exists
+mkdir -p "$REPO_ROOT/gitmux"
+# Copy the file
+cp -f ~/.gitmux.conf "$REPO_ROOT/gitmux/gitmux.conf"
+echo "Backed up gitmux.conf"
+
 # --- nvim ---
 # Ensure the target directory exists
 mkdir -p "$REPO_ROOT/nvim"

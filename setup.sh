@@ -51,6 +51,9 @@ link_config "alacritty/alacritty.toml" ".config/alacritty/alacritty.toml"
 # tmux
 link_config "tmux/tmux.conf" ".tmux.conf"
 
+# gitmux
+link_config "gitmux/gitmux.conf" ".gitmux.conf"
+
 # nvim (linking the whole directory)
 link_config "nvim" ".config/nvim"
 
