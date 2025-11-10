@@ -1,0 +1,18 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+
+-- Map 'jj' to Escape in Insert mode
+vim.keymap.set("i", "jj", "<Esc>", {
+  desc = "Exit Insert mode with jj", -- Description for which-key (if installed)
+  noremap = true, -- Non-recursive mapping
+  silent = true, -- Execute silently
+})
+
+-- Map 'jj' to Escape in Insert mode in the termimal
+
+vim.keymap.set("t", "jj", "<C-\\><C-n>", {
+  desc = "Exit Terminal mode with jj",
+  noremap = true,
+  silent = true,
+})

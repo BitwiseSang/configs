@@ -1,0 +1,1 @@
+/home/cicada3301/.config/omarchy/current/theme/neovim.lua
