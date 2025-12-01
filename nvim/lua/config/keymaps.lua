@@ -16,3 +16,6 @@ vim.keymap.set("t", "jj", "<C-\\><C-n>", {
   noremap = true,
   silent = true,
 })
+
+-- Fix for the End key being interpreted as <Select>
+vim.keymap.set({ "n", "v", "i" }, "<Select>", "<End>", { noremap = true })
