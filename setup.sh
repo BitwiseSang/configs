@@ -48,6 +48,9 @@ link_config() {
 # Ghostty
 link_config "ghostty/config.ghostty" ".config/ghostty/config.ghostty"
 
+# Ghostty
+link_config "kitty/kitty.conf" ".config/kitty/kitty.conf"
+
 # tmux
 link_config "tmux/tmux.conf" ".tmux.conf"
 

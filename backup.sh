@@ -17,6 +17,13 @@ mkdir -p "$REPO_ROOT/ghostty"
 cp -f ~/.config/ghostty/config.ghostty "$REPO_ROOT/ghostty/config.ghostty"
 echo "Backed up config.ghostty"
 
+# --- kitty ---
+# Ensure the target directory exists
+mkdir -p "$REPO_ROOT/kitty"
+# Copy the file
+cp -f ~/.config/kitty/kitty.conf "$REPO_ROOT/kitty/kitty.conf"
+echo "Backed up kitty.conf"
+
 # --- tmux ---
 # Ensure the target directory exists
 mkdir -p "$REPO_ROOT/tmux"
