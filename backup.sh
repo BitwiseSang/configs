@@ -55,6 +55,16 @@ echo "Syncing nvim configs..."
 rsync -a --delete ~/.config/nvim/ "$REPO_ROOT/nvim/"
 echo "Nvim sync complete."
 
+# --- nvim ---
+# Ensure the target directory exists
+mkdir -p "$REPO_ROOT/fish"
+# Use rsync to sync the contents of your nvim config into the repo's nvim dir
+# -a: archive mode (recursive, preserves permissions, etc.)
+# --delete: deletes files in the repo's nvim/ dir that are NO longer in your local ~/.config/nvim/
+echo "Syncing fish configs..."
+rsync -a --delete ~/.config/fish/ "$REPO_ROOT/fish/"
+echo "Fish sync complete."
+
 echo "Files copied. Committing to git..."
 
 # Navigate to the repo directory to run git commands

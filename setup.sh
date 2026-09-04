@@ -66,6 +66,9 @@ link_config "aria2/aria2.conf" "aria2.conf"
 # nvim (linking the whole directory)
 link_config "nvim" ".config/nvim"
 
+# nvim (linking the whole directory)
+link_config "fish" ".config/fish"
+
 echo ""
 echo "Dotfile setup complete!"
 echo "Old configs (if any) are in $BACKUP_DIR"
