@@ -23,6 +23,12 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
-
 # Added by Antigravity CLI installer
 set -gx PATH "/home/cicada3301/.local/bin" $PATH
+
+# Set up gpg for fish
+set -gx GPG_TTY (tty)
+
+# Refresh gpg-agent tty info on new shell sessions
+gpg-connect-agent updatesstartuptty /bye >/dev/null
+mise activate fish | source
